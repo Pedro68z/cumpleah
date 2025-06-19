@@ -4,6 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Mapa del Tesoro: Regalo de Abraham</title>
+  <!-- Importar Open Sans desde Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet" />
   <style>
     @keyframes fadeIn {
       from { opacity: 0; transform: scale(0.95); }
@@ -11,7 +13,7 @@
     }
     body {
       margin: 0;
-      font-family: 'Treasure Map Deadhand', cursive, sans-serif;
+      font-family: 'Open Sans', sans-serif;
       background: url('https://www.cidadedacultura.gal/sites/default/files/styles/989x421/public/multimedia/headers/2014/07/mapa_2.jpg?itok=Pr8kVgNz') no-repeat center center fixed;
       background-size: cover;
       color: #2c1c00;
@@ -57,6 +59,7 @@
       width: 100%;
       transition: all 0.3s;
       box-sizing: border-box;
+      font-family: 'Open Sans', sans-serif;
     }
     .input-area button,
     .option-button {
@@ -69,6 +72,7 @@
       transition: all 0.3s;
       border-radius: 5px;
       margin-right: 0.5rem;
+      font-family: 'Open Sans', sans-serif;
     }
     .input-area button:hover,
     .option-button:hover {
@@ -97,11 +101,13 @@
       z-index: 100;
       user-select: none;
       box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+      font-family: 'Open Sans', sans-serif;
     }
     .error-message {
       color: darkred;
       font-weight: bold;
       margin-top: 0.5rem;
+      font-family: 'Open Sans', sans-serif;
     }
     .final-message {
       display: none;
@@ -111,6 +117,7 @@
       text-align: center;
       font-size: 1.2rem;
       margin-top: 2rem;
+      font-family: 'Open Sans', sans-serif;
     }
     .step img {
       display: block;
@@ -129,158 +136,158 @@
     <p>Resuelve cada acertijo para llegar a la ❌ y encontrar tu regalo.</p>
   </header>
   <div class="map-container" id="steps">
-  <div class="step" id="step1">
-    <h2>❌ Punto 1</h2>
-    <p>Completa la canción:</p>
-    <p>Una de pasta, de la que se come y no se _____<br>
-       Me pido los ___________ gordos como rastas<br>
-       Basta, le he subido el ______ y no contrasta<br>
-       Tú eres mercadillo y yo dirijo la ________<br>
-       Aplasta la ______ con la que me piensa</p>
-    <div class="input-area">
-      <input type="text" id="answer1">
-      <button onclick="checkAnswer(1, 'gasta,espaguetis,brillo,subasta,mirada')">Comprobar</button>
-      <div class="error-message" id="error1"></div>
-      <div class="number-earned">Código: <span id="code1">🔒</span></div>
+    <div class="step" id="step1">
+      <h2>❌ Punto 1</h2>
+      <p>Completa la canción:</p>
+      <p>Una de pasta, de la que se come y no se _____<br>
+         Me pido los ___________ gordos como rastas<br>
+         Basta, le he subido el ______ y no contrasta<br>
+         Tú eres mercadillo y yo dirijo la ________<br>
+         Aplasta la ______ con la que me piensa</p>
+      <div class="input-area">
+        <input type="text" id="answer1">
+        <button onclick="checkAnswer(1, 'gasta,espaguetis,brillo,subasta,mirada')">Comprobar</button>
+        <div class="error-message" id="error1"></div>
+        <div class="number-earned">Código: <span id="code1">🔒</span></div>
+      </div>
+      <img src="https://i.ytimg.com/vi/Y0VM6DtwM8g/maxresdefault.jpg" alt="Imagen paso 1">
     </div>
-    <img src="https://i.ytimg.com/vi/Y0VM6DtwM8g/maxresdefault.jpg">
-  </div>
 
-  <div class="step" id="step2">
-    <h2>❌ Punto 2</h2>
-    <p>Es un Brawler Superespecial. Tiene bajos puntos de vida y alto daño producido. Ataca arrojando cartuchos de dinamita que explotan y causan daño en un radio pequeño.</p>
-    <div class="input-area">
-      <input type="text" id="answer2">
-      <button onclick="checkAnswer(2, 'dynamike')">Comprobar</button>
-      <div class="error-message" id="error2"></div>
-      <div class="number-earned">Código: <span id="code2">🔒</span></div>
+    <div class="step" id="step2">
+      <h2>❌ Punto 2</h2>
+      <p>Es un Brawler Superespecial. Tiene bajos puntos de vida y alto daño producido. Ataca arrojando cartuchos de dinamita que explotan y causan daño en un radio pequeño.</p>
+      <div class="input-area">
+        <input type="text" id="answer2">
+        <button onclick="checkAnswer(2, 'dynamike')">Comprobar</button>
+        <div class="error-message" id="error2"></div>
+        <div class="number-earned">Código: <span id="code2">🔒</span></div>
+      </div>
+      <img src="https://i.ytimg.com/vi/nN3ZkrXlDqQ/hq720.jpg?sqp=-oaymwEXCK4FEIIDSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLCg-ogEW_0lQHbR1pnFNxpJhld6Tw" alt="Imagen paso 2">
     </div>
-    <img src="https://i.ytimg.com/vi/nN3ZkrXlDqQ/hq720.jpg?sqp=-oaymwEXCK4FEIIDSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLCg-ogEW_0lQHbR1pnFNxpJhld6Tw">
-  </div>
 
-  <div class="step" id="step3">
-    <h2>❌ Punto 3</h2>
-    <p>¿Cuál es tu color favorito?</p>
-    <div class="input-area">
-      <input type="text" id="answer3">
-      <button onclick="checkAnswer(3, 'verde')">Comprobar</button>
-      <div class="error-message" id="error3"></div>
-      <div class="number-earned">Código: <span id="code3">🔒</span></div>
+    <div class="step" id="step3">
+      <h2>❌ Punto 3</h2>
+      <p>¿Cuál es tu color favorito?</p>
+      <div class="input-area">
+        <input type="text" id="answer3">
+        <button onclick="checkAnswer(3, 'verde')">Comprobar</button>
+        <div class="error-message" id="error3"></div>
+        <div class="number-earned">Código: <span id="code3">🔒</span></div>
+      </div>
+      <img src="https://www.escuelainfantilbambinos.com/web/wp-content/uploads/2020/11/colores-tarjetas.jpg" alt="Imagen paso 3">
     </div>
-    <img src="https://www.escuelainfantilbambinos.com/web/wp-content/uploads/2020/11/colores-tarjetas.jpg">
-  </div>
 
-  <div class="step" id="step4">
-    <h2>❌ Punto 4</h2>
-    <p>¿Cuál de los siguientes invitados no suelta roblox ni para cagar?<br>A) Florencia B) Bobi C) Luisa</p>
-    <div class="input-area">
-      <button class="option-button" onclick="checkAnswer(4, 'florencia')">Florencia</button>
-      <button class="option-button" onclick="checkAnswer(4, 'bobi')">Bobi</button>
-      <button class="option-button" onclick="checkAnswer(4, 'luisa')">Luisa</button>
-      <div class="error-message" id="error4"></div>
-      <div class="number-earned">Código: <span id="code4">🔒</span></div>
+    <div class="step" id="step4">
+      <h2>❌ Punto 4</h2>
+      <p>¿Cuál de los siguientes invitados no suelta roblox ni para cagar?<br>A) Florencia B) Bobi C) Luisa</p>
+      <div class="input-area">
+        <button class="option-button" onclick="checkAnswer(4, 'florencia')">Florencia</button>
+        <button class="option-button" onclick="checkAnswer(4, 'bobi')">Bobi</button>
+        <button class="option-button" onclick="checkAnswer(4, 'luisa')">Luisa</button>
+        <div class="error-message" id="error4"></div>
+        <div class="number-earned">Código: <span id="code4">🔒</span></div>
+      </div>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCJAT7iNdljL2ZmI8_2MTH92ZbhLDSZaVAzQ&s" alt="Imagen paso 4">
     </div>
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCJAT7iNdljL2ZmI8_2MTH92ZbhLDSZaVAzQ&s">
-  </div>
 
-  <div class="step" id="step5">
-    <h2>❌ Punto 5</h2>
-    <p>¿Qué brainrot es mejor?<br>A) Bombardilo Crocodilo<br>B) Chimpazini Bananini<br>C) Tung Tung Tung Sahur</p>
-    <div class="input-area">
-      <button class="option-button" onclick="checkAnswer(5, 'bombardilo crocodilo')">Bombardilo Crocodilo</button>
-      <button class="option-button" onclick="checkAnswer(5, 'chimpazini bananini')">Chimpazini Bananini</button>
-      <button class="option-button" onclick="checkAnswer(5, 'tung tung tung sahur')">Tung Tung Tung Sahur</button>
-      <div class="error-message" id="error5"></div>
-      <div class="number-earned">Código: <span id="code5">🔒</span></div>
+    <div class="step" id="step5">
+      <h2>❌ Punto 5</h2>
+      <p>¿Qué brainrot es mejor?<br>A) Bombardilo Crocodilo<br>B) Chimpazini Bananini<br>C) Tung Tung Tung Sahur</p>
+      <div class="input-area">
+        <button class="option-button" onclick="checkAnswer(5, 'bombardilo crocodilo')">Bombardilo Crocodilo</button>
+        <button class="option-button" onclick="checkAnswer(5, 'chimpazini bananini')">Chimpazini Bananini</button>
+        <button class="option-button" onclick="checkAnswer(5, 'tung tung tung sahur')">Tung Tung Tung Sahur</button>
+        <div class="error-message" id="error5"></div>
+        <div class="number-earned">Código: <span id="code5">🔒</span></div>
+      </div>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsNSzP5eMLg2i7V4goSKhYJeArEcBc9TJpBg&s" alt="Imagen paso 5">
     </div>
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsNSzP5eMLg2i7V4goSKhYJeArEcBc9TJpBg&s">
-  </div>
 
-  <div class="step" id="step6">
-    <h2>❌ Punto 6</h2>
-    <p>¿Cuál es el mejor regalo que te han hecho hasta ahora?<br>A) Una playstation<br>B) Una diadema<br>C) Tanque de batalla principal de tercera generación M1 Abrams...</p>
-    <div class="input-area">
-      <button class="option-button" onclick="checkAnswer(6, 'una playstation')">Una playstation</button>
-      <button class="option-button" onclick="checkAnswer(6, 'una diadema')">Una diadema</button>
-      <button class="option-button" onclick="checkAnswer(6, 'tanque')">Tanque</button>
-      <div class="error-message" id="error6"></div>
-      <div class="number-earned">Código: <span id="code6">🔒</span></div>
+    <div class="step" id="step6">
+      <h2>❌ Punto 6</h2>
+      <p>¿Cuál es el mejor regalo que te han hecho hasta ahora?<br>A) Una playstation<br>B) Una diadema<br>C) Tanque de batalla principal de tercera generación M1 Abrams...</p>
+      <div class="input-area">
+        <button class="option-button" onclick="checkAnswer(6, 'una playstation')">Una playstation</button>
+        <button class="option-button" onclick="checkAnswer(6, 'una diadema')">Una diadema</button>
+        <button class="option-button" onclick="checkAnswer(6, 'tanque')">Tanque</button>
+        <div class="error-message" id="error6"></div>
+        <div class="number-earned">Código: <span id="code6">🔒</span></div>
+      </div>
+      <img src="https://i0.wp.com/positivamente.com.mx/wp-content/uploads/2012/05/regalos.jpg?resize=630%2C420" alt="Imagen paso 6">
     </div>
-    <img src="https://i0.wp.com/positivamente.com.mx/wp-content/uploads/2012/05/regalos.jpg?resize=630%2C420">
-  </div>
 
-  <div class="step" id="step7" style="display: none">
-    <h2>❌ Punto Final: La X del Tesoro</h2>
-    <p>Con los 6 números obtenidos, resuelve esto:</p>
-    <ul>
-      <li>El primero es la suma del 1º y el 4º</li>
-      <li>El segundo es el número más alto</li>
-      <li>El tercero es el 6º menos el 2º</li>
-    </ul>
-    <div class="input-area">
-      <input type="text" id="finalCode" placeholder="Introduce el código de 3 cifras">
-      <button onclick="checkFinalCode()">Comprobar código</button>
-      <div class="error-message" id="errorFinal"></div>
+    <div class="step" id="step7" style="display: none">
+      <h2>❌ Punto Final: La X del Tesoro</h2>
+      <p>Con los 6 números obtenidos, resuelve esto:</p>
+      <ul>
+        <li>El primero es la suma del 1º y el 4º</li>
+        <li>El segundo es el número más alto</li>
+        <li>El tercero es el 6º menos el 2º</li>
+      </ul>
+      <div class="input-area">
+        <input type="text" id="finalCode" placeholder="Introduce el código de 3 cifras">
+        <button onclick="checkFinalCode()">Comprobar código</button>
+        <div class="error-message" id="errorFinal"></div>
+      </div>
+      <img src="https://e7.pngegg.com/pngimages/367/682/png-clipart-x-marks-the-spot-treasure-map-pirate-treasure-map-spot-map.png" alt="Imagen paso final">
     </div>
-    <img src="https://e7.pngegg.com/pngimages/367/682/png-clipart-x-marks-the-spot-treasure-map-pirate-treasure-map-spot-map.png">
-  </div>
 
-  <div class="final-message" id="finalMessage">
-    <strong>✨ ¡Felicidades, Abraham! ✨</strong><br>
-    Has recorrido todo el mapa. Tu regalo te espera...
+    <div class="final-message" id="finalMessage">
+      <strong>✨ ¡Felicidades, Abraham! ✨</strong><br>
+      Has recorrido todo el mapa. Tu regalo te espera...
+    </div>
   </div>
-</div>
   <script>
     const respuestas = {
-  1: { correcta: 'gasta,espaguetis,brillo,subasta,mirada', codigo: 3 },
-  2: { correcta: 'dynamike', codigo: 6 },
-  3: { correcta: 'verde', codigo: 1 },
-  4: { correcta: 'florencia', codigo: 4 },
-  5: { correcta: 'tung tung tung sahur', codigo: 9 },
-  6: { correcta: 'una playstation', codigo: 8 }
-};
+      1: { correcta: 'gasta,espaguetis,brillo,subasta,mirada', codigo: 3 },
+      2: { correcta: 'dynamike', codigo: 6 },
+      3: { correcta: 'verde', codigo: 1 },
+      4: { correcta: 'florencia', codigo: 4 },
+      5: { correcta: 'tung tung tung sahur', codigo: 9 },
+      6: { correcta: 'una playstation', codigo: 8 }
+    };
 
-const desbloqueadas = {};
+    const desbloqueadas = {};
 
-function checkAnswer(paso, respuestaCorrecta) {
-  const input = document.getElementById('answer' + paso);
-  const userInput = input ? input.value.trim().toLowerCase() : respuestaCorrecta.toLowerCase();
-  const respuestaEsperada = respuestas[paso].correcta.toLowerCase();
-  const error = document.getElementById('error' + paso);
-  const codeSpan = document.getElementById('code' + paso);
+    function checkAnswer(paso, respuestaCorrecta) {
+      const input = document.getElementById('answer' + paso);
+      const userInput = input ? input.value.trim().toLowerCase() : respuestaCorrecta.toLowerCase();
+      const respuestaEsperada = respuestas[paso].correcta.toLowerCase();
+      const error = document.getElementById('error' + paso);
+      const codeSpan = document.getElementById('code' + paso);
 
-  const esValida = respuestaEsperada.includes(',') ?
-    userInput.split(',').map(p => p.trim()).join(',') === respuestaEsperada :
-    userInput === respuestaEsperada;
+      const esValida = respuestaEsperada.includes(',') ?
+        userInput.split(',').map(p => p.trim()).join(',') === respuestaEsperada :
+        userInput === respuestaEsperada;
 
-  if (esValida) {
-    desbloqueadas[paso] = true;
-    error.innerText = '';
-    codeSpan.innerText = respuestas[paso].codigo;
+      if (esValida) {
+        desbloqueadas[paso] = true;
+        error.innerText = '';
+        codeSpan.innerText = respuestas[paso].codigo;
 
-    // Revisar si todos los pasos del 1 al 6 están desbloqueados
-    if (Object.keys(respuestas).every(p => desbloqueadas[p])) {
-      document.getElementById('step7').style.display = 'block';
+        // Revisar si todos los pasos del 1 al 6 están desbloqueados
+        if (Object.keys(respuestas).every(p => desbloqueadas[p])) {
+          document.getElementById('step7').style.display = 'block';
+        }
+      } else {
+        error.innerText = 'Has fallado... Inténtalo de nuevo';
+      }
     }
-  } else {
-    error.innerText = 'Has fallado... Inténtalo de nuevo';
-  }
-}
 
-function checkFinalCode() {
-  const val = document.getElementById('finalCode').value.trim();
-  const expected = [
-    respuestas[1].codigo + respuestas[4].codigo,
-    Math.max(...Object.values(respuestas).map(r => r.codigo)),
-    respuestas[6].codigo - respuestas[2].codigo
-  ];
-  if (val === expected.join('')) {
-    document.getElementById('errorFinal').innerText = '';
-    document.getElementById('finalMessage').style.display = 'block';
-  } else {
-    document.getElementById('errorFinal').innerText = 'El código no es correcto. Sigue intentándolo.';
-  }
-}
+    function checkFinalCode() {
+      const val = document.getElementById('finalCode').value.trim();
+      const expected = [
+        respuestas[1].codigo + respuestas[4].codigo,
+        Math.max(...Object.values(respuestas).map(r => r.codigo)),
+        respuestas[6].codigo - respuestas[2].codigo
+      ];
+      if (val === expected.join('')) {
+        document.getElementById('errorFinal').innerText = '';
+        document.getElementById('finalMessage').style.display = 'block';
+      } else {
+        document.getElementById('errorFinal').innerText = 'El código no es correcto. Sigue intentándolo.';
+      }
+    }
   </script>
 </body>
 </html>
